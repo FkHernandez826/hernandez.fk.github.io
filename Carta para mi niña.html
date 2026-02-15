@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link 
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" 
+      rel="stylesheet">
+      <link rel="icon" type="image/fondocarta.png" href="fondocarta.png">
+  <title>!!Carta de San Valentín!!</title>
+<head>
+    <body>
+        <h1 class="tutuloo">¡Feliz San Valentín! 💝 </h1>
+        <p class="psorpresa">Una carta muy especial para una chica de la que me enamoro cada dia....</p>
+        <div class="contenedor" id="Abrirconetenerdor">
+            <div class="superior"></div>
+            <div class="mensaje">
+                Hola mi niña hermosa, cuando leas esto espero que te sientas como yo me siento, muy feliz de saber que tuve la oportunidad de conocerte, a ti una gran y maravillosa chica, quiero recordarte que me gusta cada parte de ti, tu carisma, tus enojos, tus risas, tu sonrisa, tu cabello, tus manos, tus ojitos, tu valentia, tu determinacion y muchisismas cosas que solon tratan de ti, ahora se mejor que nadie que pasar cada segundo contigo, en donde cada mensaje se vuelve especial, le doy gracias por aceptarme como soy y le prometo que no se va a arrepentir de elegirme como la persona con la que quiere estar para siempre.  💗
+                <p>Att. Un chico que la quiere con todo su corazon</p>
+            </div>
+            <div class="carta"></div>
+            <div class="corazon">❤️</div>
+        </div>
+        <div class="botones">
+            <button class="boton" id="Abrir">Abrir</button>
+            <button class="boton" id="Cerrar">Cerrar</button>
+        </div> 
+        <script src="script.js"></script>
+    </body>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        background: #ffa5fae3;
+        margin: 0; 
+    }
+    .contenedor{
+        position: relative;
+
+ 
+    }
+    
+    .superior{   
+        position: absolute;  
+        border-left: 290px solid transparent;
+        border-right: 290px solid transparent; 
+        border-top: 140px solid #771111;
+        border-bottom: 140px solid transparent;  
+
+        transition: transform .75s;
+        transform-origin: top;
+    }
+    .carta{
+        border-left: 290px solid #e03535;
+        border-right: 290px solid #df2f1f;
+        border-top: 140px solid transparent;
+        border-bottom: 140px solid #ff5029;
+    }
+    .mensaje{
+        position: absolute;
+        padding: 1.5rem;
+        line-height: 0.8rem;
+        box-sizing: border-box;
+        text-align: center;
+        font-family: "poppins", sans-serif;
+        font-size: 12px;
+        width: 580px;
+        height: 280px;
+        background: #ffe5a8;
+        z-index: -1;
+        transition: transform 0.80s ease-in-out;
+        transform: scale(-30px);
+    }
+    .mensaje:before{
+        content: "";
+        border-style: dotted;
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        right: 12px;
+        bottom:10px;
+    }
+    .mensaje p{
+        position: relative;
+        top: -10px;
+        font-size: 1rem;
+    }
+    .corazon{
+        position: absolute;
+        color: #ff0000;
+        top: 115px;
+        right: 255px;
+        font-size: 50px;
+        animation: palpitacion 0.6s linear infinite;
+
+   
+    }
+    p.sorpresa{
+        font-family: "brush Script MT", cursive;
+        position: relative;
+        top: -20px;
+    }
+    .botones{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .boton{
+        padding: 10px 20px;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        background: linear-gradient(135deg, #bb00ff, #bb00ff);
+        background-size: 200% 200%;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 10px  rgb(0, 0, 0);
+    }
+    .boto:hover{
+        background-position: 100% 100%;
+        box-shadow: 0 5px 16px  rgb(0, 0, 0);
+    }
+    .Abrir-superior{
+        transform: rotateX(180deg);
+    }
+    .Abrir-mensaje{
+        transform: translateY(-100px);
+    }
+    .bx-rotada{
+        color: #ff5580;
+        animation: none;
+    }
+    @keyframes palpitacion {
+        0% {
+            transform: scale(1);
+        }
+        60% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1.2);
+        }
+    }
+
+    @media (max-width: 600px) {
+        .mensaje:before{
+            content: "";
+            border-style: dotted;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            bottom:10px;
+        }
+        .mensaje p {
+            position: relative;
+            top: -10px;
+            font-size: 0.8rem;
+  
+        }
+    }
+</style>
+<html>
+
+
